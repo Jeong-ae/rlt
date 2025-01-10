@@ -32,6 +32,11 @@ The recursive is important to ensure that submodules are cloned as well.
 We use `mamba` for environment management. Set up the environment with the following:
 
 ```bash
+## install mamba
+conda config --add channels conda-forge
+conda update -n base --all
+conda install -n base mamba
+
 mamba env create -f environment.yaml
 mamba activate rlt
 ```
